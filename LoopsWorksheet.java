@@ -48,9 +48,16 @@ public class LoopsWorksheet {
 	      		+ "pets name to appear on the screen?");
 	      Scanner num = new Scanner (System.in);
 	      int count = num.nextInt();
-        
-        for (count = 0; count > 0; count++) {
-          System.out.println(name);
+
+        if (count <= 0 ) {
+          System.out.println("Negative integers are not accepted.");
+        }
+        else {
+
+          for (count = 0; count > 0; count++) {
+            System.out.println(name);
+          }
+
         }
 
 	}
